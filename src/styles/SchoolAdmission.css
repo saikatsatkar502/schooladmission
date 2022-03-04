@@ -88,12 +88,14 @@ main .Main .AdmissionHeader details{
     font-size: x-small;
 }
 
-main .Main .AdmissionStatus .AdmissionHeader #SelectClass{
+main .Main #SelectClass{
     position: absolute;
     background: transparent;
+    top: 5rem;
+    right: 7rem;
 }
 
-main .Main .AdmissionStatus .AdmissionHeader #SelectClass #ChooseClassBtn {
+main .Main #SelectClass #ChooseClassBtn {
     width: fit-content;
     height: 40px;
     background: #f0e5f0;
@@ -108,7 +110,7 @@ main .Main .AdmissionStatus .AdmissionHeader #SelectClass #ChooseClassBtn {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
     
 }  
-main .Main .AdmissionStatus .AdmissionHeader #SelectClass #OPtions{
+main .Main #SelectClass #OPtions{
     list-style-type: none;
     text-decoration: none;
    padding-top: 10px;
@@ -123,7 +125,7 @@ main .Main .AdmissionStatus .AdmissionHeader #SelectClass #OPtions{
     position: absolute;
     transition: all 0.5s ease-out 0.3s;
 } 
-main .Main .AdmissionStatus .AdmissionHeader #SelectClass #OPtions button{
+main .Main #SelectClass #OPtions button{
     border: 1px solid lightblue;
     border-radius: 5px;
     padding:1px 5px;
@@ -133,12 +135,12 @@ main .Main .AdmissionStatus .AdmissionHeader #SelectClass #OPtions button{
 
 }
 
-main .Main .AdmissionStatus .AdmissionHeader #SelectClass #ChooseClassBtn:hover + #OPtions , .Main .AdmissionStatus .AdmissionHeader #SelectClass #OPtions:hover{
+main .Main #SelectClass #ChooseClassBtn:hover + #OPtions , .Main #SelectClass #OPtions:hover{
     opacity: 1;
     transform: scale(1);
 }
 
-main .Main .AdmissionStatus .AdmissionHeader #SelectClass #ChooseClassBtn:hover ,  .Main .AdmissionStatus .AdmissionHeader #SelectClass #OPtions button:hover{
+main .Main  #SelectClass #ChooseClassBtn:hover ,  .Main #SelectClass #OPtions button:hover{
     cursor:pointer;
 }
 
@@ -202,6 +204,8 @@ main .Main .AdmissionStatus #ViewMore{
     border: none;
     font-size: 20px;
     line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
