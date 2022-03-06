@@ -2,20 +2,20 @@ import React from 'react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 export default function AdmissionStatus() {
     return (
-        <div class="AdmissionStatus">
-            <section class="AdmissionHeader">
+        <div className="AdmissionStatus">
+            <section className="AdmissionHeader">
                 <h2>Online Admission Open</h2>
             </section>
 
             <table id='admissionOpen'>
                 <thead>
                     <tr>
-                        <th scope="col">Class</th>
+                        <th scope="col">class</th>
                         <th scope="col">Session</th>
                         <th scope="col">Last Date</th>
                         <th scope="col">Application Fees</th>
                         <th scope='col'>Scolership</th>
-                        <th scope="col" colspan="2">Action</th>
+                        <th scope="col" >Action</th>
                     </tr>
                 </thead>
                 <tbody>

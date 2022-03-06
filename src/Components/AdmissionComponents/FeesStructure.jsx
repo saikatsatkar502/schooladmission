@@ -2,9 +2,9 @@ import React from 'react'
 import { InfoTwoTone } from '@mui/icons-material'
 export default function FeesStructure() {
     return (
-        <div class="FeeStructure">
+        <div className="FeeStructure">
 
-            <section class="fees">
+            <section className="fees">
                 <h2>
                     Fee Structure
                 </h2>
@@ -17,7 +17,7 @@ export default function FeesStructure() {
                     <br />
                 </p>
                 <p>
-                    <label for="CostIndexing">
+                    <label htmlFor="CostIndexing">
                         <h5>Cost Indexing</h5>
                     </label>
                     <progress id="CostIndexing" value="47" max="100">677</progress>
@@ -25,7 +25,7 @@ export default function FeesStructure() {
 
                 </p>
                 <p>
-                    <label for="feesavg">
+                    <label htmlFor="feesavg">
                         <h5>Monthly Fees Average Trend</h5>
                     </label>
                     <progress id="feesavg" value="60" max="100">677</progress>
@@ -38,59 +38,59 @@ export default function FeesStructure() {
                 </p>
 
             </section>
-            <section class="FeesDetails">
+            <section className="FeesDetails">
 
                 <br />
                 <h5>Fees Details for : </h5>
                 <table id="FeesDetails">
                     <thead>
                         <tr>
-                            <th class="Type" scope="col">Type</th>
-                            <th class="Amount" scope="col">Amount</th>
-                            <th class="Frequency" scope="col">Frequency</th>
+                            <th className="Type" scope="col">Type</th>
+                            <th className="Amount" scope="col">Amount</th>
+                            <th className="Frequency" scope="col">Frequency</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row" id="RegFee">Registration Fees:</th>
-                            <td class="Amount">1000</td>
-                            <td class="Frequency">One time</td>
+                            <td className="Amount">1000</td>
+                            <td className="Frequency">One time</td>
                         </tr>
                         <tr>
                             <th scope="row">Addmission Fee:</th>
-                            <td class="Amount">45000</td>
-                            <td class="Frequency">One time</td>
+                            <td className="Amount">45000</td>
+                            <td className="Frequency">One time</td>
                         </tr>
                         <tr>
                             <th scope="row">Tuition Fees:</th>
-                            <td class="Amount">10000</td>
-                            <td class="Frequency">Quarterly</td>
+                            <td className="Amount">10000</td>
+                            <td className="Frequency">Quarterly</td>
                         </tr>
                         <tr>
                             <th scope="row">Security Fees:</th>
-                            <td class="Amount">5000</td>
-                            <td class="Frequency">One time</td>
+                            <td className="Amount">5000</td>
+                            <td className="Frequency">One time</td>
                         </tr>
                         <tr>
                             <th scope="row">Annual Fees:</th>
-                            <td class="Amount">10000</td>
-                            <td class="Frequency">Annually</td>
+                            <td className="Amount">10000</td>
+                            <td className="Frequency">Annually</td>
                         </tr>
                         <tr>
                             <th scope="row">Development Fees:</th>
-                            <td class="Amount">10000</td>
-                            <td class="Frequency">Annually</td>
+                            <td className="Amount">10000</td>
+                            <td className="Frequency">Annually</td>
                         </tr>
                         <tr>
                             <th scope="row">Transport Fees:</th>
-                            <td class="Amount">30000</td>
-                            <td class="Frequency">Quterly</td>
+                            <td className="Amount">30000</td>
+                            <td className="Frequency">Quterly</td>
                         </tr>
                         <tr id='TotalAmount'>
                             <th scope="row" style={{ "fontWeight": "500", "fontSize": "24px" }}>Total Amout For New Admssion:</th>
-                            <td class="Amount" style={{ "fontSize": "26px", "fontWeight": "600" }}>111000</td>
-                            <td class="Frequency" style={{ "fontSize": "20px", "fontWeight": "400" }}>One Time</td>
-                            <td class="cal"><button id='CalcAmount'><InfoTwoTone style={{ "vertical-align": "middle", "color": "Blue", "fontSize": "20px" }} />Calculation</button></td>
+                            <td className="Amount" style={{ "fontSize": "26px", "fontWeight": "600" }}>111000</td>
+                            <td className="Frequency" style={{ "fontSize": "20px", "fontWeight": "400" }}>One Time</td>
+                            <td className="cal"><button id='CalcAmount'><InfoTwoTone style={{ "vertical-align": "middle", "color": "Blue", "fontSize": "20px" }} />Calculation</button></td>
                         </tr>
                     </tbody>
                 </table>

@@ -1,39 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-*{margin: 0; padding: 0; 
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; 
-    
+    font-family: 'Poppins', sans-serif;
 }
-main{
 
+main {
     margin: 0 auto;
     width: 100%;
     /* width: 1443px; */
     height: 100vh;
 }
 
-main .Header{
+main .Header {
     position: absolute;
     width: 100%;
     height: 60px;
     /* left: 4px; */
     top: 0px;
-
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-main .Uper-Section{
+
+main .Uper-Section {
     position: absolute;
-     width: 100%; 
+    width: 100%;
     height: 310px;
     margin: 0 auto;
     top: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-main .Main{
+
+main .Main {
     position: absolute;
     width: 100%;
-    width: 1440px;  
-    left: calc(50% - 1440px/2 - 0.5px); 
+    width: 1440px;
+    left: calc(50% - 1440px/2 - 0.5px);
     top: 410px;
     margin: 0 auto;
     background: #E1E9ED;
@@ -42,11 +47,11 @@ main .Main{
     align-items: center;
     flex-direction: column;
     padding: 60px 38px;
-    
     flex-wrap: wrap;
     align-content: center;
 }
-main .Main .AdmissionStatus{
+
+main .Main .AdmissionStatus {
     height: 352px;
     width: 1364px;
     left: 43px;
@@ -59,14 +64,15 @@ main .Main .AdmissionStatus{
     flex-direction: column;
     margin-bottom: 18px;
 }
-main .Main .AdmissionHeader{
+
+main .Main .AdmissionHeader {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px 5%;
 }
 
-main .Main .AdmissionHeader h2{
+main .Main .AdmissionHeader h2 {
     padding-left: 0;
     margin-right: auto;
     background-color: #E1E9ED;
@@ -79,16 +85,17 @@ main .Main .AdmissionHeader h2{
     border-radius: 5px;
     text-align: center;
     font-size: 20px;
-line-height: 30px;
+    line-height: 30px;
 }
-main .Main .AdmissionHeader details{
+
+main .Main .AdmissionHeader details {
     padding-left: 0;
     margin-right: auto;
     font-weight: 300;
     font-size: x-small;
 }
 
-main .Main #SelectClass{
+main .Main #SelectClass {
     position: absolute;
     background: transparent;
     top: 5rem;
@@ -107,13 +114,13 @@ main .Main #SelectClass #ChooseClassBtn {
     text-decoration: none;
     font-size: medium;
     padding: 1px 2px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.25);
-    
-}  
-main .Main #SelectClass #OPtions{
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+main .Main #SelectClass #OPtions {
     list-style-type: none;
     text-decoration: none;
-   padding-top: 10px;
+    padding-top: 10px;
     background: transparent;
     float: right;
     margin-right: inherit;
@@ -124,47 +131,53 @@ main .Main #SelectClass #OPtions{
     cursor: pointer;
     position: absolute;
     transition: all 0.5s ease-out 0.3s;
-} 
-main .Main #SelectClass #OPtions button{
+}
+
+main .Main #SelectClass #OPtions button {
     border: 1px solid lightblue;
     border-radius: 5px;
-    padding:1px 5px;
+    padding: 1px 5px;
     margin: 4px 2px;
     width: 120px;
     font-size: 15px;
-
 }
 
-main .Main #SelectClass #ChooseClassBtn:hover + #OPtions , .Main #SelectClass #OPtions:hover{
+main .Main #SelectClass #ChooseClassBtn:hover+#OPtions,
+.Main #SelectClass #OPtions:hover {
     opacity: 1;
     transform: scale(1);
 }
 
-main .Main  #SelectClass #ChooseClassBtn:hover ,  .Main #SelectClass #OPtions button:hover{
-    cursor:pointer;
+main .Main #SelectClass #ChooseClassBtn:hover,
+.Main #SelectClass #OPtions button:hover {
+    cursor: pointer;
 }
 
-main .Main .AdmissionStatus table td,th{
+main .Main .AdmissionStatus table td,
+th {
     border: none;
     padding: 20px;
     font-size: 20px;
-line-height: 30px;
+    line-height: 30px;
 }
-main .Main .AdmissionStatus table td{
+
+main .Main .AdmissionStatus table td {
     text-align: center;
     font-weight: 300;
-
 }
-main .Main .AdmissionStatus table th[scope="col"]{
+
+main .Main .AdmissionStatus table th[scope="col"] {
     background-color: lightblue;
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
 }
-main .Main .AdmissionStatus table th[scope="row"]{
+
+main .Main .AdmissionStatus table th[scope="row"] {
     font-weight: 400;
 }
-main .Main .AdmissionStatus table{
+
+main .Main .AdmissionStatus table {
     text-align: center;
     padding: 10px;
     /* border: solid lightblue; */
@@ -173,32 +186,35 @@ main .Main .AdmissionStatus table{
     margin-right: auto;
     background: transparent;
     font-size: 20px;
-line-height: 30px;
+    line-height: 30px;
     border-collapse: collapse;
     width: 1233px;
     border-collapse: collapse;
     box-sizing: border-box;
 }
+
 main .Main .AdmissionStatus table tbody td button#Apply {
     border-radius: 10px;
-   background-color: #0A61AE;
+    background-color: #0A61AE;
     color: #FCFCFC;
     border: none;
     box-sizing: border-box;
     width: 123px;
     height: 33px;
 }
-main .Main .AdmissionStatus table tbody td button#Apply:hover{
-    background:transparent;
-    border:1px solid #0A61AE;
+
+main .Main .AdmissionStatus table tbody td button#Apply:hover {
+    background: transparent;
+    border: 1px solid #0A61AE;
     color: #0A61AE;
     border-radius: 10px;
     box-sizing: border-box;
     cursor: pointer;
 }
-main .Main .AdmissionStatus #ViewMore{
+
+main .Main .AdmissionStatus #ViewMore {
     text-align: center;
-    margin-bottom:30px ;
+    margin-bottom: 30px;
     margin-top: auto;
     background: transparent;
     border: none;
@@ -208,9 +224,7 @@ main .Main .AdmissionStatus #ViewMore{
     margin-right: auto;
 }
 
-
-
-main .Main .FeeStructure{
+main .Main .FeeStructure {
     display: flex;
     justify-content: flex-end;
     padding: 20px 5%;
@@ -226,14 +240,14 @@ main .Main .FeeStructure{
     background: #FFFFFF;
 }
 
-main .Main .FeeStructure .fees{
+main .Main .FeeStructure .fees {
     padding-left: 0;
     margin-right: auto;
     font-weight: 500;
     margin-left: 20px;
 }
 
-main .Main .FeeStructure .fees h2{
+main .Main .FeeStructure .fees h2 {
     margin-right: auto;
     background-color: #E1E9ED;
     padding: 5% 6% 1% 1%;
@@ -248,15 +262,18 @@ main .Main .FeeStructure .fees h2{
     line-height: 30px;
 }
 
-main .Main .FeeStructure .fees p,h5{
+main .Main .FeeStructure .fees p,
+h5 {
     font-weight: 400;
     font-size: small;
 }
 
-main .Main .FeeStructure .FeesDetails{
+main .Main .FeeStructure .FeesDetails {
     margin-left: 20px;
     padding-left: 2px;
 }
+
+
 /* 
 main .Main .FeeStructure .FeesDetails #selectClassType {
 
@@ -265,12 +282,12 @@ main .Main .FeeStructure .FeesDetails #selectClassType {
     float: inline-end;
 } */
 
-
-main .Main .FeeStructure .FeesDetails h5{
+main .Main .FeeStructure .FeesDetails h5 {
     font-weight: 400;
     font-size: 20px;
 }
-main .Main .FeeStructure .FeesDetails table{
+
+main .Main .FeeStructure .FeesDetails table {
     text-align: center;
     /* border: 1px solid lightblue; */
     margin-left: auto;
@@ -284,29 +301,34 @@ main .Main .FeeStructure .FeesDetails table{
     table-layout: auto;
     width: 800px;
 }
+
 main .Main .FeeStructure .FeesDetails table th[scope="col"] {
     text-align: left;
     font-weight: 500;
 }
-main .Main .FeeStructure .FeesDetails table tbody th[scope="row"]{
+
+main .Main .FeeStructure .FeesDetails table tbody th[scope="row"] {
     text-align: left;
     font-weight: 300;
-   
 }
+
 main .Main .FeeStructure .FeesDetails table th.Amount,
-main .Main .FeeStructure .FeesDetails table td.Amount  {
+main .Main .FeeStructure .FeesDetails table td.Amount {
     text-align: right;
 }
+
 main .Main .FeeStructure .FeesDetails table th.Frequency,
-main .Main .FeeStructure .FeesDetails table td.Frequency{
+main .Main .FeeStructure .FeesDetails table td.Frequency {
     text-align: right;
-} 
-main .Main .FeeStructure .FeesDetails table th,td{
-    
+}
+
+main .Main .FeeStructure .FeesDetails table th,
+td {
     /* border-bottom: 1px solid lightblue; */
     padding: 10px;
 }
-main .Main .FeeStructure .FeesDetails table td #CalcAmount{
+
+main .Main .FeeStructure .FeesDetails table td #CalcAmount {
     text-align: center;
     font-size: 12px;
     font-weight: 200;
@@ -314,8 +336,7 @@ main .Main .FeeStructure .FeesDetails table td #CalcAmount{
     border: none;
 }
 
-
-main .Main .AdmissionTimeLine{
+main .Main .AdmissionTimeLine {
     width: 1364px;
     height: 507px;
     left: calc(50% - 1364px/2 - 0.5px);
@@ -323,9 +344,9 @@ main .Main .AdmissionTimeLine{
     margin-bottom: 18px;
     margin-top: 18px;
     background: #FFFFFF;
-    
 }
-main .Main .AdmissionTimeLine h2{
+
+main .Main .AdmissionTimeLine h2 {
     height: 69px;
     background-color: #E1E9ED;
     width: 350px;
@@ -339,10 +360,11 @@ main .Main .AdmissionTimeLine h2{
     line-height: 30px;
 }
 
-main .Main .AdmissionTimeLine .timeline{
+main .Main .AdmissionTimeLine .timeline {
     text-align: -webkit-center;
 }
-main .Main .AdmissionTimeLine .timeline table{
+
+main .Main .AdmissionTimeLine .timeline table {
     margin: 0 auto;
     background: transparent;
     font-style: normal;
@@ -355,40 +377,49 @@ main .Main .AdmissionTimeLine .timeline table{
     width: 900px;
     margin-bottom: 20px;
 }
+
 main .Main .AdmissionTimeLine .timeline table th[scope="col"] {
     text-align: left;
     font-weight: 500;
 }
-main .Main .AdmissionTimeLine .timeline table th[scope="row"]{
+
+main .Main .AdmissionTimeLine .timeline table th[scope="row"] {
     text-align: left;
     font-weight: 500;
 }
+
 main .Main .AdmissionTimeLine .timeline table th.Time,
-main .Main .AdmissionTimeLine .timeline table td.Time{
+main .Main .AdmissionTimeLine .timeline table td.Time {
     text-align: right;
 }
+
 main .Main .AdmissionTimeLine .timeline table th.Action,
-main .Main .AdmissionTimeLine .timeline table td.Action{
+main .Main .AdmissionTimeLine .timeline table td.Action {
     text-align: right;
 }
-main .Main .AdmissionTimeLine .timeline table td, th{
+
+main .Main .AdmissionTimeLine .timeline table td,
+th {
     padding: 10px;
 }
-main .Main .AdmissionTimeLine .timeline table td#st1{
-    font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-color: #66B502;
-}
-main .Main .AdmissionTimeLine .timeline table td#st2{
+
+main .Main .AdmissionTimeLine .timeline table td#st1 {
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
-    line-height: 30px;  
+    line-height: 30px;
+    color: #66B502;
+}
+
+main .Main .AdmissionTimeLine .timeline table td#st2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
     color: #CA0101;
 }
-main .Main .AdmissionTimeLine .timeline #UpcomingAdmission{
+
+main .Main .AdmissionTimeLine .timeline #UpcomingAdmission {
     text-align: left;
     margin-top: 60px;
     padding-left: 8rem;
@@ -398,6 +429,7 @@ main .Main .AdmissionTimeLine .timeline #UpcomingAdmission{
     line-height: 30px;
     color: #000000;
 }
+
 main .Main .AdmissionTimeLine .timeline #UpcomingAdmission ul>li {
     list-style-type: none;
     margin-left: 2rem;
@@ -406,11 +438,10 @@ main .Main .AdmissionTimeLine .timeline #UpcomingAdmission ul>li {
     font-size: 20px;
     line-height: 30px;
     /* identical to box height */
-    
-    
     color: #000000;
 }
-main .Main .AdmissionTimeLine .timeline #UpcomingAdmission ul>li #Year{
+
+main .Main .AdmissionTimeLine .timeline #UpcomingAdmission ul>li #Year {
     margin: 0 2rem;
     padding: 5px 7px;
     border: none;
@@ -422,56 +453,55 @@ main .Main .AdmissionTimeLine .timeline #UpcomingAdmission ul>li #Year{
     background: transparent;
 }
 
-main .Main .AdmissionTimeLine .timeline #AllDetails{
+main .Main .AdmissionTimeLine .timeline #AllDetails {
     display: flex;
-    justify-content:flex-end;
+    justify-content: flex-end;
     align-items: center;
     margin-top: 5rem;
 }
-main .Main .AdmissionTimeLine .timeline #AllDetails .StatusOngoing{
+
+main .Main .AdmissionTimeLine .timeline #AllDetails .StatusOngoing {
     margin-left: 150px;
     font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height */
-color: #66B502;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    /* identical to box height */
+    color: #66B502;
 }
 
-main .Main .AdmissionTimeLine .timeline #AllDetails .StatusUpcomming{
+main .Main .AdmissionTimeLine .timeline #AllDetails .StatusUpcomming {
     margin-left: 150px;
     font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 30px;
-
-color: #0A61AE;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0A61AE;
 }
-main .Main .AdmissionTimeLine .timeline #AllDetails .StatusOngoing .no{
+
+main .Main .AdmissionTimeLine .timeline #AllDetails .StatusOngoing .no {
     border: 1px solid #66B502;
     padding: 5px;
 }
-main .Main .AdmissionTimeLine .timeline #AllDetails .StatusUpcomming .no{
+
+main .Main .AdmissionTimeLine .timeline #AllDetails .StatusUpcomming .no {
     border: 1px solid #0A61AE;
     padding: 5px;
 }
-main .Main .AdmissionTimeLine .timeline #AllDetails div button#CheckDetails{
+
+main .Main .AdmissionTimeLine .timeline #AllDetails div button#CheckDetails {
     margin-left: 150px;
     background: transparent;
     border: none;
     font-style: normal;
-font-weight: normal;
-font-size: 25px;
-line-height: 37px;
-/* identical to box height */
-
-
-color: #000000;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 37px;
+    /* identical to box height */
+    color: #000000;
 }
 
-
-
-main .Main .AdmissionCriteria{
+main .Main .AdmissionCriteria {
     justify-content: left;
     padding: 20px 5%;
     margin-left: 0px;
@@ -480,14 +510,14 @@ main .Main .AdmissionCriteria{
     left: calc(50% - 1364px/2 - 0.5px);
     margin: 18px auto;
     background: #FFFFFF;
-    
 }
 
-main .Main .AdmissionCriteria .contentHeader{
+main .Main .AdmissionCriteria .contentHeader {
     display: flex;
     align-items: center;
 }
-main .Main .AdmissionCriteria .contentHeader h2{
+
+main .Main .AdmissionCriteria .contentHeader h2 {
     height: 69px;
     background-color: #E1E9ED;
     width: 500px;
@@ -500,21 +530,24 @@ main .Main .AdmissionCriteria .contentHeader h2{
     font-size: 20px;
     line-height: 30px;
 }
-main .Main .AdmissionCriteria #Criteria{
+
+main .Main .AdmissionCriteria #Criteria {
     margin-top: 26px;
 }
-main .Main .AdmissionCriteria #Criteria label{
+
+main .Main .AdmissionCriteria #Criteria label {
     margin: 10px 0 10px;
     font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 37px;
-color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+    color: #000000;
 }
-main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity{
+
+main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity {
     display: grid;
-    grid-template-columns: repeat(3,0.5fr);
-    grid-template-rows: repeat(4,0.5fr);
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-template-rows: repeat(4, 0.5fr);
     margin-top: 20px;
     grid-gap: 10px 5%;
     align-content: center;
@@ -527,87 +560,85 @@ main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity{
     grid-auto-columns: 2;
     grid-column: 2;
     grid-row: 4;
-  }
+}
 
-  .OfficeTiming {
+.OfficeTiming {
     grid-column: 1;
     grid-row: 4;
-  }
+}
 
-  .ParentInteraction {
+.ParentInteraction {
     grid-column: 1;
     grid-row: 3;
-  }
+}
 
-  .TotalSeats {
+.TotalSeats {
     grid-column: 3;
     grid-row: 2;
-  }
+}
 
-  .FormAvailablity {
+.FormAvailablity {
     grid-row: 3;
     grid-column: 3;
-  }
-  
-  .FormPayment {
-    grid-row: 3;
-  }
+}
 
-  .WrittenTest {
+.FormPayment {
+    grid-row: 3;
+}
+
+.WrittenTest {
     grid-row: 2;
     grid-column: 2;
-  }
+}
 
-  .StudentIntraction {
+.StudentIntraction {
     grid-row: 2;
     grid-column: 1;
-  }
- 
-main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dl dt, #EleLable {
-    font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 37px;
-color: #000000;
 }
-main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dl dt.schoolTime:nth-child(1){
+
+main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dl dt,
+#EleLable {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 37px;
+    color: #000000;
+}
+
+main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dl dt.schoolTime:nth-child(1) {
     font-size: 0.8rem;
     font-weight: 300;
-   }
-   main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dt.schoolTime:nth-child(3) {
+}
+
+main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dt.schoolTime:nth-child(3) {
     font-size: 0.8rem;
     font-weight: 300;
-   }
+}
 
-   main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dl dd{
-       /* padding: 2px 3%; */
-       margin-left: 5px;
-       font-style: normal;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 37px;
-        color: #000000;
-   }
-   
-
-
+main .Main .AdmissionCriteria #Criteria .AdmissionEligiblity dl dd {
+    /* padding: 2px 3%; */
+    margin-left: 5px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 37px;
+    color: #000000;
+}
 
 main .Main .AdmissionCriteria #RequiredDocument {
     padding-top: 10px;
 }
 
 main .Main .AdmissionCriteria #RequiredDocument label {
-
     margin-left: 0%;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
-    line-height: 37px;  
+    line-height: 37px;
     color: #000000;
-
 }
-main .Main .AdmissionCriteria #RequiredDocument #Document li {
 
+main .Main .AdmissionCriteria #RequiredDocument #Document li {
     font-size: 18px;
     font-weight: 400;
     margin-left: 30px;
@@ -615,21 +646,17 @@ main .Main .AdmissionCriteria #RequiredDocument #Document li {
     list-style: none;
 }
 
-
-
-
-main .Main .AdditionalNotes{
+main .Main .AdditionalNotes {
     justify-content: left;
     padding: 20px 5%;
     width: 1364px;
     height: 341px;
     left: calc(50% - 1364px/2 - 0.5px);
     margin: 18px auto;
-    
     background: #FFFFFF;
 }
 
-main .Main .AdditionalNotes h2{
+main .Main .AdditionalNotes h2 {
     height: 69px;
     background-color: #E1E9ED;
     width: 300px;
@@ -642,7 +669,8 @@ main .Main .AdditionalNotes h2{
     font-size: 20px;
     line-height: 30px;
 }
-main .Main .AdditionalNotes #AdInfo{
+
+main .Main .AdditionalNotes #AdInfo {
     width: 856px;
     height: 134px;
     left: calc(50% - 856px/2 - 103.5px);
@@ -654,7 +682,8 @@ main .Main .AdditionalNotes #AdInfo{
     flex-wrap: wrap;
     align-content: center;
 }
-main .Main .AdditionalNotes ul>li{
+
+main .Main .AdditionalNotes ul>li {
     list-style-type: none;
     font-style: normal;
     font-weight: normal;
@@ -663,4 +692,3 @@ main .Main .AdditionalNotes ul>li{
     padding: 0px 10px;
     margin-bottom: 10px;
 }
-

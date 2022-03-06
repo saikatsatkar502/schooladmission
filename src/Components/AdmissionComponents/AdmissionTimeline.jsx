@@ -2,31 +2,31 @@ import React from 'react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 export default function AdmissionTimeline() {
   return (
-    <div class="AdmissionTimeLine">
-                        <div class="contentHeader">
+    <div className="AdmissionTimeLine">
+                        <div className="contentHeader">
 
                             <h2>Admission timeline :</h2>
 
                         </div>
-                        <div class="timeline">
+                        <div className="timeline">
                             <table id="status">
                                 <thead>
                                     <tr>
-                                        <th class="Event" scope="col">Events</th>
-                                        <th class="Time" scope="col">Date/ Month</th>
-                                        <th class="Action" scope="col">Action</th>
+                                        <th className="Event" scope="col">Events</th>
+                                        <th className="Time" scope="col">Date/ Month</th>
+                                        <th className="Action" scope="col">Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <th scope="row" id="application1">Nursery</th>
-                                        <td class="Time" id='t1'> 20 February - 30 March</td>
-                                        <td class="Action" id='st1'>Ongoing</td>
+                                        <td className="Time" id='t1'> 20 February - 30 March</td>
+                                        <td className="Action" id='st1'>Ongoing</td>
                                     </tr>
                                     <tr>
                                         <th scope="row" id="application2">Primary</th>
-                                        <td class="Time" id='t2'>20 November - 31 January</td>
-                                        <td class="Action" id='st2'>Ended</td>
+                                        <td className="Time" id='t2'>20 November - 31 January</td>
+                                        <td className="Action" id='st2'>Ended</td>
                                     </tr>
                                 </tbody>
                             </table>

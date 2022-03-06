@@ -3,7 +3,8 @@ import '../styles/SchoolAdmission.css'
 import AdmissionStatus from './AdmissionComponents/AdmissionStatus';
 import FeesStructure from './AdmissionComponents/FeesStructure';
 import AdmissionTimeline from './AdmissionComponents/AdmissionTimeline';
-import AdditionalNotes from './AdmissionComponents/    AdditionalNotes';
+import AdditionalNotes from './AdmissionComponents/AdditionalNotes';
+import ProfileStructure from './My-Profile/ProfileStructure';
 export default function SchoolAdmission() {
 
 
@@ -14,16 +15,16 @@ export default function SchoolAdmission() {
 
         <div>
             <main>
-                <div class="Header">
+                <div className="Header">
 
                     <h1>PROMORA</h1>
 
 
                 </div>
 
-                <div class="Uper-Section"> Sumit Section.</div>
+                <div className="Uper-Section"> <ProfileStructure/> </div>
 
-                <div class="Main">
+                <div className="Main">
                     <div id="SelectClass">
                         <button id="ChooseClassBtn" name="ChooseClass">Choose Class</button>
                         <ul id="OPtions">
@@ -43,7 +44,7 @@ export default function SchoolAdmission() {
                     <AdditionalNotes />
 
                 </div>
-                <div class="Footer"> Promora Details and Important Links. </div>
+                <div className="Footer"> Promora Details and Important Links. </div>
             </main>
         </div>
 

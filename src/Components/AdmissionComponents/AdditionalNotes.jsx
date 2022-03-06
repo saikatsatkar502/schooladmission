@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AdditionalNotes() {
     return (
-        <div class="AdditionalNotes">
+        <div className="AdditionalNotes">
             <h2>Additional Notes:</h2>
             <ul id='AdInfo'>
                 <li>Transfer Certificate requires from class 2 Onwards.</li>
