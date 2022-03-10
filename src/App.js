@@ -1,34 +1,22 @@
-// import logo from './logo.svg';
-// import './App.css';
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import UserProfile from './Components/UserProfile';
+import UserAddress from './Components/My-Profile/UserAddress';
 import SchoolAdmission from './Components/SchoolAdmission';
-import UserProfile from './Components/UserProfile'
 function App() {
-    return ( 
-        // div className = "App" > {
-        //     /* <header className="App-header">
-        //             <img src={logo} className="App-logo" alt="logo" />
-        //             <p>
-        //               Edit <code>src/App.js</code> and save to reload.
-        //             </p>
-        //             <a
-        //               className="App-link"
-        //               href="https://reactjs.org"
-        //               target="_blank"
-        //               rel="noopener noreferrer"
-        //             >
-        //               Learn React
-        //             </a>
-        //           </header> */
-        // } <
-        // SchoolAdmission > < /SchoolAdmission>
+  return (
+    <div>
 
-        // <
-        // /div>
-        <div>
-          
-          <UserProfile/>
-        </div>
-    );
+      <Routes>
+        {/* <Route exact path='/' element={<UserProfile/>}/> */}
+        <Route path="/" element={<UserProfile />} >
+          <Route path="Profile" element={<UserProfile />} />
+          <Route path="Address" element={<UserAddress />} />
+        </Route>
+        <Route exact path='/School/Address' element={<SchoolAdmission />} />
+      </Routes>
+    </div>
+  );
 }
 
 export default App;
