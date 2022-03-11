@@ -2,7 +2,6 @@ import React from 'react'
 import coverPic from '../../assets/uper_cover_pic.svg';
 import profilePic from '../../assets/profilePic.svg';
 import '../../styles/ProfileStructure.css'
-import ProfileNav from './ProfileNav';
 export default function ProfileStructure() {
     const ProfilePicture = () => {
         return (<div id='ProfilePicture'>
@@ -19,7 +18,7 @@ export default function ProfileStructure() {
 
 
     return (
-        <div className='ProfileTop'  >
+        <div className='profileTop'  >
             <BackGroundPicture />
             <div id='profileDetails'>
                 <div className='names' style={{ marginLeft: "1rem" }}>
@@ -32,9 +31,7 @@ export default function ProfileStructure() {
                 </div>
 
             </div>
-            <div id='subNav'>
-                <ProfileNav />
-            </div>
+            
         </div>
     )
 }

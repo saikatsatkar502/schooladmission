@@ -1,25 +1,23 @@
 #UserProfile{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
+    flex-direction: column;
     width: 100%;
     margin: 0 auto;
     height: 100vh;
-    /* width: 1200px; */
-   margin: 0 auto;
     background: #FFFFFF;
     border: 1px solid #000000;
     box-sizing: border-box;
 }
-.ProfileTop{
+.profileTop{
+    
     display: flex;
     justify-content:flex-start;
     flex-direction: column;
-    position: absolute;
-    /* width: 1200px; */
-    height: 409px;
-    /* left: calc(50% - 1200px/2); */
-    top:90px;
-    border: 1px solid black;
+    height: 329px;
     margin: 0 auto;
+    margin-top: 1rem;
+    background: transparent;
 }

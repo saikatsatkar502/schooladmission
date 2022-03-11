@@ -1,0 +1,20 @@
+#subNav{
+    margin: 0 auto;
+    transform: translateY(-1.5rem);
+    /* height: 80px; */
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#subNav>.link,#subNav>.link>Button{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0A61AE;
+    text-decoration: none;
+}

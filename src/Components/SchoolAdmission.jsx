@@ -4,10 +4,12 @@ import AdmissionStatus from './AdmissionComponents/AdmissionStatus';
 import FeesStructure from './AdmissionComponents/FeesStructure';
 import AdmissionTimeline from './AdmissionComponents/AdmissionTimeline';
 import AdditionalNotes from './AdmissionComponents/AdditionalNotes';
-import ProfileStructure from './My-Profile/ProfileStructure';
+import { Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
+
 export default function SchoolAdmission() {
 
-
+    const navigate = useNavigate();
 
 
 
@@ -18,11 +20,11 @@ export default function SchoolAdmission() {
                 <div className="Header">
 
                     <h1>PROMORA</h1>
-
+                    <Button onClick={()=>navigate("/user")}>My Profile</Button>
 
                 </div>
 
-                <div className="Uper-Section"> <ProfileStructure/> </div>
+                <div className="Uper-Section"> </div>
 
                 <div className="Main">
                     <div id="SelectClass">
