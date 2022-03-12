@@ -20,7 +20,7 @@ export default function SchoolAdmission() {
                 <div className="Header">
 
                     <h1>PROMORA</h1>
-                    <Button onClick={()=>navigate("/user")}>My Profile</Button>
+                    <Button onClick={()=>navigate("/")}>My Profile</Button>
 
                 </div>
 

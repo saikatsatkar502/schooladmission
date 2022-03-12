@@ -5,6 +5,9 @@ import '../styles/UserProfile.css'
 import ProfileNav from './My-Profile/ProfileNav'
 // import UserAddress from './My-Profile/UserAddress'
 export default function UserProfile() {
+
+
+
 	return (
 		<div id='UserProfile' >
 
@@ -12,8 +15,11 @@ export default function UserProfile() {
 
 			<ProfileStructure />
 
-			<ProfileNav id='subNav' />
-			<Outlet/>
+			<ProfileNav />
+			<div id='elements'>
+				<Outlet />
+			</div>
+
 		</div>
 
 	)

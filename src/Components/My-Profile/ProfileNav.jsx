@@ -8,8 +8,8 @@ export default function ProfileNav() {
   const navigate = useNavigate();
   return (
     <nav id='subNav'>
-      <Link className='link' to={"/user/Home"}><Button>Home</Button></Link>
-      <Link className='link' to={"/user/Address"}> <Button>Address</Button> </Link>
+      <Link className='link' to={"/"}><Button>Home</Button></Link>
+      <Link className='link' to={"/user/myInfo"}> <Button>My Info</Button> </Link>
       <Button className='link' onClick={() => navigate("/School/Address")}>My School</Button>
     </nav>
   )
