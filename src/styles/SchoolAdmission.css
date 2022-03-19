@@ -25,6 +25,7 @@ main .Header {
     justify-content: space-between;
     align-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 main .Uper-Section {

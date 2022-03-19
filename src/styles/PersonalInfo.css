@@ -1,4 +1,4 @@
-#home{
+#PersonalInfo{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-#home .home{
+#PersonalInfo .PInfo{
     display: flex;
     align-content: center;
     align-items: center;
@@ -17,7 +17,4 @@
     margin: 1rem auto;
     border-radius: 0.5rem ;
     filter: drop-shadow(0px 4px 4px rgba(106, 89, 255, 0.486));
-}
-#Experience{
-    
 }
