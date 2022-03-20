@@ -1,9 +1,12 @@
 import React from 'react';
 import '../../styles/myProfileHome.css';
+import Me from './ProfileHomeComponents/Me';
 export default function MyProfileHome() {
+
   return (
+
     <div id='home'>
-      <div id='me' className='home'> me</div>
+      <div id='me' className='home'><Me /></div>
       <div id='Experience' className='home'>
 
         <h2>Experience</h2>
