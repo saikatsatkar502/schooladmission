@@ -1,4 +1,4 @@
-import { TextareaAutosize, Fab, Button } from '@mui/material'
+import { Fab, Button, TextField } from '@mui/material'
 import EditIcon from '@mui/icons-material/Edit';
 import React, { useEffect, useState } from 'react'
 import DoneIcon from '@mui/icons-material/Done';
@@ -20,11 +20,12 @@ export default function Me() {
                     <EditIcon />
                 </Fab>
             </div>
-            {!edit ? (<p id='me'>{me}</p>) : (
+            {!edit ? (<p id='me1'>{me}</p>) : (
                 <div id='Edit-Me'>
-                    <TextareaAutosize
-                        aria-label="minimum height"
-                        minRows={4}
+                    <TextField
+                        rows={4}
+                        multiline
+                        label="About Me"
                         placeholder= "About Me"
                         style={{ width: "100%" ,background:"transparent",outline:"none"}}
                         value={me}

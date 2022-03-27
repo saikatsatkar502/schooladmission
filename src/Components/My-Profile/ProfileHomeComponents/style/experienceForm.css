@@ -1,0 +1,21 @@
+
+#expForm{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+#ExperienceForm{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5rem auto;
+    width: 100%;
+    background:transparent;
+
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../styles/myProfileHome.css';
+import Experience from './ProfileHomeComponents/Experience';
 import Me from './ProfileHomeComponents/Me';
 export default function MyProfileHome() {
 
@@ -7,11 +8,7 @@ export default function MyProfileHome() {
 
     <div id='home'>
       <div id='me' className='home'><Me /></div>
-      <div id='Experience' className='home'>
-
-        <h2>Experience</h2>
-        <p>hello</p>
-
+      <div id='Experience' className='home'><Experience />
       </div>
       <div id='Courses' className='home' >Courses</div>
       <div id='Skills' className='home' >Skills</div>
