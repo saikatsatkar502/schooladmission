@@ -3,11 +3,11 @@ import Fab from '@mui/material/Fab';
 import Modal from '@mui/material/Modal';
 import AddIcon from '@mui/icons-material/Add';
 import Backdrop from '@mui/material/Backdrop';
-import './style/Experience.css'
-import ExperienceForm from './Experience-components/ExperienceForm';
+import './style/Course.css'
 import { Fade, Box } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
-import ViewExperience from './Experience-components/ViewExperience';
+import ViewCourse from './Courses-components/ViewCourse';
+import CourseForm from './Courses-components/CourseForm';
 
 const style = {
     position: 'absolute',
@@ -21,49 +21,40 @@ const style = {
     p: 2,
 };
 
-export default function Experience() {
-    const [Experiences, setExperiences] = useState([]);
-    // const [isData , setIsData]= useState(false);
+export default function Courses() {
+    const [Courses, setCourses] = useState([]);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
-    const ExperienceHandler = (Experience) => {
+    const CourseHandler = (Course) => {
         const data={
             id: uuidv4(),
-            ...Experience
+            ...Course,
         }
-        setExperiences([...Experiences, data]);
-        // setIsData(true);
+        setCourses([...Courses, data]);
     }
     const deleteHandler = (id)=>{
-        const newExpList = Experiences.filter((contact) => {
-            return contact.id !== id;
+        const newCourseList = Courses.filter((course) => {
+            return course.id !== id;
           });
-          setExperiences(newExpList);
-        //   if(newExpList === ""){
-        //       setIsData(false);
-        //   }
+          setCourses(newCourseList);
     }
 
     useEffect(() => {
-        const Experiences = JSON.parse(localStorage.getItem('Experiences'));
-        // if(Experiences === ""){
-        //     setIsData(false);
-        
-        // }
-        setExperiences(Experiences);
+        const Courses = JSON.parse(localStorage.getItem('Courses'));
+        setCourses(Courses);
     }, [])
    
 
     useEffect(() => {
-        localStorage.setItem('Experiences', JSON.stringify(Experiences));
-    }, [Experiences]);
+        localStorage.setItem('Courses', JSON.stringify(Courses));
+    }, [Courses]);
 
     return (
-        <div id='Experience-Component'>
+        <div id='Course-Component'>
             <div className='header'>
-                <h2>Experience</h2>
+                <h2>Courses and Certification</h2>
                 <Fab size="small" color="primary" aria-label="add" onClick={handleOpen} >
                     <AddIcon />
                 </Fab>
@@ -82,15 +73,15 @@ export default function Experience() {
             >
                 <Fade in={open}>
                     <Box sx={style}>
-                        <ExperienceForm ExperienceHandler={ExperienceHandler} handleClose={handleClose} />
+                        <CourseForm CourseHandler={CourseHandler} handleClose={handleClose} />
                     </Box>
                 </Fade>
             </Modal>
             <div id='data'>
                 {
-                    (Experiences.length <1) ? (<p>Please click <code> + </code> to add Experience </p>)
+                    (Courses.length <1) ? (<p>Please click <code><b> + </b></code> to add Courses and Certifications </p>)
                     :
-                    (<ViewExperience Experiences={Experiences} deleteHandler={deleteHandler} />)
+                    (<ViewCourse Courses={Courses} deleteHandler={deleteHandler} />)
                 }
             </div>
 

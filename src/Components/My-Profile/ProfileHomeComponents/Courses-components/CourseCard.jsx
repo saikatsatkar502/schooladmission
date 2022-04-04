@@ -3,8 +3,8 @@ import Typography from '@mui/material/Typography';
 import { Delete, Edit } from '@mui/icons-material';
 import React from 'react'
 
-export default function ExpCard(props) {
-    const { id, Title, EmployementType, CompanyName, Location, StartDate, EndDate } = props.Experience
+export default function CourseCard(props) {
+    const { id, Name, IssuingOrganization, IssueDate, ExpirationDate, CredentialId, CredentialUrl } = props.Courses
 
     function stringToColor(string) {
         let hash = 0;
@@ -44,13 +44,13 @@ export default function ExpCard(props) {
                             <Delete />
                         </IconButton>
                     }
-                    
+
                 >
                     <ListItemAvatar>
-                        <Avatar {...stringAvatar(CompanyName)} />
+                        <Avatar {...stringAvatar(IssuingOrganization)} />
                     </ListItemAvatar>
                     <ListItemText
-                        primary={CompanyName}
+                        primary={Name}
                         secondary={
                             <React.Fragment>
                                 <Typography
@@ -59,10 +59,10 @@ export default function ExpCard(props) {
                                     variant="body2"
                                     color="text.primary"
                                 >
-                                    <span id='t1'>{Title} - {EmployementType}</span><br />
+                                    <span id='t1'>{IssuingOrganization} - {CredentialId}</span> <br />
                                 </Typography>
-                                Starts from - {StartDate} to - {EndDate!==""?(EndDate):<span>present</span>}<br/>
-                                {Location}
+                                Issue Date - {IssueDate} Experation Date - {ExpirationDate !== "" ? (ExpirationDate) : <span>Not Expeired</span>} <br />
+                                URL : {CredentialUrl}
                             </React.Fragment>
                         }
                     />

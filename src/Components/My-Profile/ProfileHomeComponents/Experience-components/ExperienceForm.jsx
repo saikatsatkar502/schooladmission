@@ -3,8 +3,11 @@ import { FormControl, TextField } from '@mui/material';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import Select from '@mui/material/Select';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
 import '../style/experienceForm.css';
 export default function ExperienceForm(props) {
+    const [checked, setChecked] = React.useState(true);
     const [data, setData] = useState({
         Title: '',
         EmployementType: '',
@@ -42,11 +45,11 @@ export default function ExperienceForm(props) {
     return (
         <div id='expForm'><h3>Experience Form</h3>
             <form onSubmit={submitHandler} id='ExperienceForm' >
-                <TextField type="text" name="Title" id="title" label="Title" variant="outlined" required
+                <TextField className='inputBox' type="text" name="Title" id="title" label="Title" variant="outlined" required
                     value={data.Title}
                     onChange={(e) => changeHandler(e)}
                 />
-                <FormControl fullWidth>
+                <FormControl fullWidth className='inputBox'>
                     <InputLabel id="demo-simple-select-label" >Employement Type</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"
@@ -65,30 +68,43 @@ export default function ExperienceForm(props) {
                     </Select>
                 </FormControl>
 
-                <TextField id="CompanyName" label="Company Name" variant="outlined" name="CompanyName" required
+                <TextField className='inputBox' id="CompanyName" label="Company Name" variant="outlined" name="CompanyName" required
                     value={data.CompanyName}
                     onChange={(e) => changeHandler(e)} />
 
-                <TextField type="text" name="Location" id="Location" label='Location' variant='outlined' required
+                <TextField className='inputBox' type="text" name="Location" id="Location" label='Location' variant='outlined' required
                     value={data.Location}
                     onChange={(e) => changeHandler(e)} />
+                <div className='inputBox'>
+                    <FormControlLabel control={<Checkbox checked={checked} onChange={(e)=>{setChecked(e.target.checked)}} />} 
+                    label="I am currently working in this Role" 
+                    />
+                </div>
                 <div className='inputBox'>
                     <label htmlFor="StartDate">Start Date : </label>
                     <input type="date" name="StartDate" id="StartDate" placeholder='Start Date' required
                         value={data.StartDate}
                         onChange={(e) => changeHandler(e)} />
                 </div>
-                <div className='inputBox'>
+                {
+                    checked === false ?
+                    (<div className='inputBox'>
                     <label htmlFor="EndDate">End Date : </label>
                     <input type="date" name="EndDate" id="EndDate" placeholder='End Date'
                         value={data.EndDate}
                         onChange={(e) => changeHandler(e)} />
-                </div>
-                <TextField type="text" name="HeadLine" id="HeadLine" label='Head Line' variant='outlined'
+                </div>)
+                :
+                (null)
+                }
+                
+                
+                <TextField className='inputBox' type="text" name="HeadLine" id="HeadLine" label='Head Line' variant='outlined'
                     value={data.HeadLine}
                     onChange={(e) => changeHandler(e)} />
 
                 <TextField
+                    className='inputBox'
                     name='Description'
                     multiline
                     label="Description"
@@ -98,7 +114,7 @@ export default function ExperienceForm(props) {
                     value={data.Description}
                     onChange={(e) => changeHandler(e)}
                 />
-                <input type="submit" value="Save" />
+                <input className='inputBox' type="submit" value="Save" />
             </form>
         </div>
     )

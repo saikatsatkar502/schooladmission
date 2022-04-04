@@ -1,5 +1,5 @@
 
-#expForm{
+#CrsForm{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
 }
 
 
-#ExperienceForm{
+#CourseForm{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,7 +20,7 @@
 
 }
 
-#ExperienceForm .inputBox{
+#CourseForm .inputBox{
     margin: 0.3rem 0rem;
 
 }
