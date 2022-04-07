@@ -1,5 +1,5 @@
 
-#CrsForm{
+#SklForm{
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
 }
 
 
-#CourseForm{
+#SkillForm{
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -20,7 +20,7 @@
 
 }
 
-#CourseForm .inputBox{
+#SkillForm .inputBox{
     margin: 0.5rem 0rem;
-    
+    width: 100%;
 }

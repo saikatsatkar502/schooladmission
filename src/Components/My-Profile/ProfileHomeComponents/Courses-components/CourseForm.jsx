@@ -78,7 +78,7 @@ export default function CourseForm(props) {
                 <TextField className='inputBox' type="text" name="CredentialUrl" id="CredentialUrl" label='Credential Url' variant='outlined' 
                     value={data.CredentialUrl}
                     onChange={(e) => changeHandler(e)} />
-                <input className='inputBox' type="submit" value="Save" style={{padding:"0.2rem 0.3rem", fontSize:"0.5rem"}} />
+                <input className='inputBox' type="submit" value="Save" style={{padding:"0.2rem 0.3rem", fontSize:"1rem"}} />
             </form>
         </div>
     )

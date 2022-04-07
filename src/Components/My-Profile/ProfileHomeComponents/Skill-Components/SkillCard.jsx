@@ -1,10 +1,10 @@
 import { List, ListItem, ListItemAvatar, ListItemText, Avatar, Divider, IconButton } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import { Delete } from '@mui/icons-material';
+import { Delete} from '@mui/icons-material';
 import React from 'react'
 
-export default function CourseCard(props) {
-    const { id, Name, IssuingOrganization, IssueDate, ExpirationDate, CredentialId, CredentialUrl } = props.Courses
+export default function SkillCard(props) {
+    const { id, Name, SkillType } = props.Skill;
 
     function stringToColor(string) {
         let hash = 0;
@@ -47,7 +47,7 @@ export default function CourseCard(props) {
 
                 >
                     <ListItemAvatar>
-                        <Avatar {...stringAvatar(IssuingOrganization)} />
+                        <Avatar {...stringAvatar(Name)} />
                     </ListItemAvatar>
                     <ListItemText
                         primary={Name}
@@ -59,10 +59,8 @@ export default function CourseCard(props) {
                                     variant="body2"
                                     color="text.primary"
                                 >
-                                    <span id='t1'>{IssuingOrganization} - {CredentialId}</span> <br />
+                                    <span id='t1'>{SkillType}</span>
                                 </Typography>
-                                Issue Date - {IssueDate} Experation Date - {ExpirationDate !== "" ? (ExpirationDate) : <span>Not Expeired</span>} <br />
-                                URL : {CredentialUrl}
                             </React.Fragment>
                         }
                     />
