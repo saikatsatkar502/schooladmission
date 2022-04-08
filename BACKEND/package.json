@@ -1,13 +1,13 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Mock Json Server",
+  "main": "User.js",
   "scripts": {
     "start": "json-server -p 3006 -w User.json"
   },
   "keywords": [],
-  "author": "",
+  "author": "Soumik Sarkar",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.0"
