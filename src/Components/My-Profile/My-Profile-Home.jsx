@@ -14,7 +14,7 @@ export default function MyProfileHome() {
       </div>
       <div id='Courses' className='home' ><Courses /></div>
       <div id='Skills' className='home' ><Skill/></div>
-      <div id='Interests' className='home' >Interests</div>
+      {/* <div id='Interests' className='home' >Interests</div> */}
     </div>
   )
 }

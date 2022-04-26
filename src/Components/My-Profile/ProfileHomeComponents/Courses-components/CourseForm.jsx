@@ -36,7 +36,7 @@ export default function CourseForm(props) {
     }
 
     return (
-        <div id='CrsForm'><h3>Experience Form</h3>
+        <div id='CrsForm'><h3>Course and Certification Form</h3>
             <form onSubmit={submitHandler} id='CourseForm' >
                 <TextField className='inputBox' type="text" name="Name" id="Name" label="Name" variant="outlined" required
                     value={data.Name}

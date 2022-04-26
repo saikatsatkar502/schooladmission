@@ -1,0 +1,24 @@
+#ContactDetails-Component {
+    width: 100%;
+    margin: 0.2rem auto;
+}
+
+#ContactDetails-Component .header {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0.5rem auto;
+}
+
+#ContactDetails-Component #Edit-ContactDetails {
+    width: 100%;
+    margin: 0.5rem auto;
+}
+
+#ContactDetails-Component #ContactDetails1 {
+    width: 100%;
+    margin: 0.2rem auto;
+}

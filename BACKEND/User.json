@@ -1,13 +1,11 @@
 {
-    "ME":{},
-    "COURSES":[
-        
-    ],
-    "EXPERIENCES":[
-
-    ],
-    
-    "SKILLS":[
-
-    ] 
+  "User": [
+    {
+      "id": 1,
+      "me": "hi"
+    }
+  ],
+  "COURSES": [],
+  "EXPERIENCES": [],
+  "SKILLS": []
 }
