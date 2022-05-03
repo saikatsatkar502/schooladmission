@@ -38,30 +38,6 @@ export default function ContactForm(props) {
             <form onSubmit={submitHandler} id='EduDetails' >
 
                 <FormControl fullWidth className='inputBox'>
-                    <InputLabel id="demo-simple-select-label" >Select Contact Type</InputLabel>
-                    <Select
-                        labelId="demo-simple-select-label"
-                        id="demo-simple-select"
-                        value={data.ContactType}
-                        label="Select Contact Type"
-                        name='ContactType'
-                        required
-                        onChange={(e) => changeHandler(e)}
-                    >
-                        {
-                            props.contactType.map(c => {
-                                return (
-                                    <MenuItem value={c} ><code>{c}</code> </MenuItem>
-                                )
-                            })
-                        }
-
-                    </Select>
-                </FormControl>
-
-
-
-                <FormControl fullWidth className='inputBox'>
                     <InputLabel id="demo-simple-select-label" >Select Country Code</InputLabel>
                     <Select
                         labelId="demo-simple-select-label"

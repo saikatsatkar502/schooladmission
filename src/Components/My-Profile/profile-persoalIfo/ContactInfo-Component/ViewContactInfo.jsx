@@ -5,7 +5,7 @@ export default function ViewContactInfo(props) {
     const deleteContactHandler = (id) => {
         props.deleteHandler(id);
     };
-    const renderContacts = props.Courses.map((Contact) => {
+    const renderContacts = props.Contact.map((Contact) => {
         return (
             <ContactCard Courses={Contact} cickHandler={deleteContactHandler} key={Contact.id} />
         );
