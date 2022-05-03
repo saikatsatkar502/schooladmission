@@ -28,7 +28,6 @@ export default function ContactInfo() {
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
     const [country, setCountry] = useState([]);
-    const contactType = ["Home", "Office", "Personal"];
 
     const ContactDetailsHandler = (Contact) => {
         const data = {
@@ -97,15 +96,16 @@ export default function ContactInfo() {
             >
                 <Fade in={open}>
                     <Box sx={style}>
-                        <ContactForm ContactDetailsHandler={ContactDetailsHandler} country={country} handleClose={handleClose} contactType={contactType} />
+                        <ContactForm ContactDetailsHandler={ContactDetailsHandler} country={country} handleClose={handleClose}
+                        />
                     </Box>
                 </Fade>
             </Modal>
             <div id='data'>
                 {
-                    (ContactDetails.length < 1) ? (<p>Please click <code><b> + </b></code> to add ContactDetails and Certifications </p>)
+                    (ContactDetails.length < 1) ? (<p>Please click <code><b> + </b></code> to add Contact Details. </p>)
                         :
-                        (<ViewContactInfo ContactDetails={ContactDetails} deleteHandler={deleteHandler} />)
+                        (<ViewContactInfo Contacts={ContactDetails} deleteHandler={deleteHandler} />)
                 }
             </div>
 

@@ -5,9 +5,9 @@ export default function ViewContactInfo(props) {
     const deleteContactHandler = (id) => {
         props.deleteHandler(id);
     };
-    const renderContacts = props.Contact.map((Contact) => {
+    const renderContacts = props.Contacts.map((Contact) => {
         return (
-            <ContactCard Courses={Contact} cickHandler={deleteContactHandler} key={Contact.id} />
+            <ContactCard Contact={Contact} cickHandler={deleteContactHandler} key={Contact.id} />
         );
     });
     return (
