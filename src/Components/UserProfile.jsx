@@ -1,9 +1,8 @@
 import React from 'react'
 import ProfileStructure from './My-Profile/ProfileStructure'
-import { Navigate, Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import '../styles/UserProfile.css'
 import ProfileNav from './My-Profile/ProfileNav'
-import { Button } from '@mui/material'
 // import UserAddress from './My-Profile/UserAddress'
 export default function UserProfile() {
 
@@ -14,8 +13,8 @@ export default function UserProfile() {
 
 			<div className="Header">
 
-				<h1>PROMORA</h1>
-				<Button onClick={() => Navigate("/")}>My Profile</Button>
+				<h1>Your Profile</h1>
+
 
 			</div>
 

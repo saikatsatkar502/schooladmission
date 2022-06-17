@@ -1,12 +1,10 @@
 import React, { useState } from 'react'
-import { v4 as uuidv4 } from 'uuid';
 import Fab from '@mui/material/Fab';
 import Modal from '@mui/material/Modal';
 import AddIcon from '@mui/icons-material/Add';
 import EditIcon from '@mui/icons-material/Edit';
 import Backdrop from '@mui/material/Backdrop';
 import { Fade, Box } from '@mui/material';
-import axios from 'axios';
 import './style/Addrerss.css'
 import AddressForm from './Address-Component/AddressForm';
 import ViewAddress from './Address-Component/ViewAddress';
@@ -30,7 +28,6 @@ export default function Address() {
         currentAddress: "",
         permanentAddress: "",
     });
-    const [isEdit, setIsEdit] = useState(false);
     const [open, setOpen] = React.useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);

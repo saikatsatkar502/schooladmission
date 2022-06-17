@@ -4,6 +4,7 @@ import AdmissionStatus from './AdmissionComponents/AdmissionStatus';
 import FeesStructure from './AdmissionComponents/FeesStructure';
 import AdmissionTimeline from './AdmissionComponents/AdmissionTimeline';
 import AdditionalNotes from './AdmissionComponents/AdditionalNotes';
+import image from '../assets/back.jpg';
 import { Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,13 +20,13 @@ export default function SchoolAdmission() {
             <main>
                 <div className="Header">
 
-                    <h1>PROMORA</h1>
+                    <h1>School</h1>
                     <Button onClick={() => navigate("/")}>My Profile</Button>
 
                 </div>
 
                 <div className="Uper-Section">
-
+                    <img src={image} alt="back pic" style={{ "width": "95%", "height": "110%", "margin": "2% auto" }} />
                 </div>
 
                 <div className="Main">
