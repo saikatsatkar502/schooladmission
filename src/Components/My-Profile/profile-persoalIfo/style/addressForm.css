@@ -1,0 +1,27 @@
+#Address {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#PermanentAddress h3,
+#CurrentAddress h3 {
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+#CurrentAddress,
+#PermanentAddress {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#AddressForm #AddressDetails #Address #CurrentAddress .inputBox,
+#AddressForm #AddressDetails #Address #PermanentAddress .inputBox {
+    margin: 0.5rem 0rem;
+}

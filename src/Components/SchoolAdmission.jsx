@@ -20,11 +20,13 @@ export default function SchoolAdmission() {
                 <div className="Header">
 
                     <h1>PROMORA</h1>
-                    <Button onClick={()=>navigate("/")}>My Profile</Button>
+                    <Button onClick={() => navigate("/")}>My Profile</Button>
 
                 </div>
 
-                <div className="Uper-Section"> </div>
+                <div className="Uper-Section">
+
+                </div>
 
                 <div className="Main">
                     <div id="SelectClass">

@@ -75,7 +75,7 @@ export default function ContactInfo() {
     }, [ContactDetails]);
 
     return (
-        <div id='Course-Component'>
+        <div id='ContactDetails-Component'>
             <div className='header'>
                 <h2>Contact Details</h2>
                 <Fab size="small" color="primary" aria-label="add" onClick={handleOpen} >
